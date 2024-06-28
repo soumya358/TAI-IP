@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Roboto;
+    src: url('RobotoSlab-VariableFont_wght.ttf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: .3s;
+    font-family: Roboto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+nav h1 a {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00A36C;
+}
+
+
+
+
+
+
+
+
+
+section {
+    padding: 10px 150px;
+}
+
+section>div {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+section>div h1 {
+    color: #00693D;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+section>div>div {
+    padding: 100px;
+}
+
+section>div>div span {
+    display: flex;
+    justify-content: space-between;
+}
+
+section>div>div h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+section ul,
+section li {
+    list-style-type: '--';
+    padding: 0 15px;
+}
+
+li>p {
+    margin-left: 50px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#recipes {
+    background-color: rgba(0, 163, 109, 0.1);
+    padding: 200px 70px;
+}
+
+#recipes h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#recipeContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+.recipeDiv {
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.recipeDiv:hover {
+    box-shadow: 2px 2px 10px 1px black;
+}
+
+.recipeDiv img {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+}
+
+.recipeDiv>div {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.recipeDiv>div span {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+
+.recipeDiv>div div {
+    background-color: white;
+    padding: 10px;
+}
